@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid;
+            width: 700px;
+            height: 900px;
+            background-color: rgb(138, 203, 247);
+        }
+
+        .logo{
+            background-color: aqua;
+            width: 300px;
+            height: 90px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid;
+            box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.35);
+            margin: auto;
+            margin-top: 20px;
+        }
+        .logo h2 {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 30px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 3px;
+        }
+
+        .logo h3 {
+            margin: 3px 0 0 0;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 30px;
+        }
+        td {
+            padding: 4px 2px;
+            vertical-align: middle;
+            font-size: 17px;
+        }
+
+        input[type="text"], select {
+            padding: 2px 4px;
+            border: 1px solid #777;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        .label-col{
+            width: 170px;
+            text-align: left;
+            padding-left: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div style="padding-left: 600px;">
+        <div class="container">
+            <div class="logo">
+                <h2>Jackson</h2>
+                <h3>Electronics</h3>
+            </div>
+
+            <h1 style="text-align: center; font-size: 25px; padding-top: 20px; padding-bottom: 20px;">Registration Form</h1>
+            <p style="text-align: center; font-size: 17;"><i>Register your Jackson Electronics product here</i></p>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td class="label-col">First Name:</td>
+                        <td style="padding-left: 50px;">
+                            <input type="text" style="width: 130px;">
+                            &nbsp;Last Name:&nbsp;
+                            <input type="text" style="width: 120px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">Address #1:</td>
+                        <td style="padding-left: 50px;"><input type="text" style="width: 230px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">Address #2:</td>
+                        <td style="padding-left: 50px;"><input type="text" style="width: 230px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">City:</td>
+                        <td style="padding-left: 50px;">
+                            <input type="text" style="width: 150px;">
+                            &nbsp;State:&nbsp;
+                            <input type="text" style="width: 40px;">
+                            &nbsp;Zip:&nbsp;
+                            <input type="text" style="width: 90px;">
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">Country:</td>
+                        <td style="padding-left: 50px;">
+                            <input type="text" style="width: 150px;">
+                        </td>
+                    </tr>
+
+                </table>
+
+                <hr size="1" width="87%" color="black">
+
+                <table>
+                    <tr>
+                        <td class="label-col">Product:</td>
+                        <td style="padding-left: 50px;">
+                            <select name="selection" id="selc1">
+                                <option value="1">ScanMaster</option>
+                                <option value="2">Tung tung tung sahur</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">Date Purchased:</td>
+                        <td style="padding-left: 50px;">
+                            <input type="text" style="width: 150px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">Serial #:</td>
+                        <td style="padding-left: 50px;">
+                            <input type="text" style="width: 150px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">Used for:</td>
+                        <td style="padding-left: 50px;">
+                            <table style="padding: 2px;">
+                                <tr>
+                                    <td style="width: 140px;"><label><input type="radio" name="used_for" value="Home"> Home</label></td>
+                                    <td><label><input type="radio" name="used_for" value="Other"> Educational Institution</label></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label><input type="radio" name="system" value="Business"> Business</label></td>
+                                    <td><label><input type="radio" name="system" value="Other"> Other</label></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><label><input type="radio" name="used_for" value="Government"> Government</label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label-col">Used for:</td>
+                        <td style="padding-left: 50px;">
+                            <table style="padding: 2px;">
+                                    <tr>
+                                        <td style="width: 140px;"><label><input type="checkbox" name="used_for" value="Home"> Windows</label></td>
+                                        <td><label><input type="checkbox" name="used_for" value="Other"> UNIX</label></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label><input type="checkbox" name="system" value="Business"> Macintosh</label></td>
+                                        <td><label><input type="checkbox" name="system" value="Other"> Other</label></td>
+                                    </tr>
+                            </table>
+                        </td>        
+                    </tr>
+                    
+                </table>
+
+                <hr size="1" width="87%" color="black">
+                <table>
+                    <tr>
+                        <td class="label-col" style="padding-bottom: 80px;">Comments?: </td>
+                        <td style="padding-top: 10px; padding-left: 50px;">
+                            <textarea style="width: 380px; height: 100px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+
+                <div style="padding-left: 250px;">
+                    <input type="submit" value="Cick to register">
+                    <input type="reset" value="Cick to cancle">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
